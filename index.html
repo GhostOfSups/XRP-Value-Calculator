@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRP Value Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>XRP Value Calculator</h1>
+        
+        <!-- Section 1: XRP to USD/EUR -->
+        <div class="calculator">
+            <h2>Calculate XRP Value</h2>
+            <label for="xrp-amount">Enter XRP Amount:</label>
+            <input type="number" id="xrp-amount" placeholder="Enter XRP amount" step="any">
+            <button onclick="calculateValue()">Calculate</button>
+            <div id="result">
+                <p>USD: <span id="usd-value">0.00</span></p>
+                <p>EUR: <span id="eur-value">0.00</span></p>
+            </div>
+        </div>
+        
+        <!-- Section 2: Target Value to XRP -->
+        <div class="calculator">
+            <h2>Calculate XRP Needed</h2>
+            <label for="target-amount">Enter Target Amount:</label>
+            <input type="number" id="target-amount" placeholder="Enter amount" step="any">
+            <select id="currency-select">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+            </select>
+            <button onclick="calculateXRPNeeded()">Calculate</button>
+            <div id="xrp-result">
+                <p>XRP Needed: <span id="xrp-needed">0.00</span></p>
+            </div>
+        </div>
+        
+        <p id="error" class="error"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
