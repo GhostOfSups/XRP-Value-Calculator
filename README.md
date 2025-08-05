@@ -2,6 +2,8 @@
 
 A simple HTML-based web application to calculate the value of XRP in USD and EUR, and determine how much XRP is needed for a specific USD or EUR amount.
 
+https://GhostOfSups.github.io/XRP-Value-Calculator
+
 ## Features
 - Enter an amount of XRP to see its current value in USD and EUR.
 - Enter a target amount in USD or EUR to calculate how much XRP is needed.
